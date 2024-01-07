@@ -1,5 +1,4 @@
-// script.js
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const toggleModeButton = document.getElementById('toggleModeButton');
 
     // 다크모드 토글 함수

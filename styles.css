@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    margin: 50px;
+    position: relative;
+    transition: background-color 0.5s ease;
+}
+
+h1 {
+    color: #007bff;
+}
+
+/* 다크모드 스타일 추가 */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* 전환 버튼 스타일 추가 */
+button {
+    position: fixed; 
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 마우스를 올렸을 때의 스타일 변경 */
+button:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #fff;
+}
+
+/* 다크모드에서 버튼 스타일 변경 */
+.dark-mode button {
+    border-color: #fff;
+}
+
+/* 화이트모드에서 버튼 스타일 변경 */
+body:not(.dark-mode) button {
+    border-color: #000;
+}
+
+/* 오픈소스 확인 링크 스타일 추가 */
+.open-source-link {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.open-source-link a {
+    display: block;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* 오픈소스 확인 링크 스타일 변경 */
+.open-source-link a:hover {
+    text-decoration: underline;
+}
